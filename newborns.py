@@ -4,7 +4,7 @@ data = json.load(open('newborns.json'))
 
 def get_table_newborns(year):
     table_names = ["Name", "Year", "NumberOfPersons", "Month"]
-    
+
     if year:
         newborns_to_show = [n for n in data if n["Cells"]["Year"]==year]
     else:

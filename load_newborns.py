@@ -2,9 +2,9 @@ import requests, json
 import settings
 
 def main():
-	URL = "http://api.data.mos.ru/v1/datasets/2009/rows?api_key=" + settings.MOSRU_API_KEY
+	url = "http://api.data.mos.ru/v1/datasets/2009/rows?api_key=" + settings.MOSRU_API_KEY
 
-	resp = requests.get(URL)
+	resp = requests.get(url)
 
 	data = json.loads(resp.text)
 
